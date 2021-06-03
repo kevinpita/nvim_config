@@ -8,13 +8,17 @@ if fn.empty(fn.glob(install_path)) > 0 then
   execute 'packadd packer.nvim'
 end
 
+vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
 return require("packer").startup(function(use)
-    use "wbthomason/packer.nvim"
-    use {
-  'nvim-telescope/telescope.nvim',
-  requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-}
-  use 'kyazdani42/nvim-web-devicons'
+	use "wbthomason/packer.nvim"
+	use {
+		'nvim-telescope/telescope.nvim',
+		requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+	}
+	use 'kyazdani42/nvim-web-devicons'
+	use 'neovim/nvim-lspconfig'
+	use 'hrsh7th/nvim-compe'
+	use 'hrsh7th/vim-vsnip'
 
 end)
