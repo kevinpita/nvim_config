@@ -12,6 +12,16 @@ o.errorbells = false
 o.wrap = false
 o.swapfile = false
 o.ruler = true
+o.hidden = true
+o.incsearch = true
+o.backup = false
+o.showcmd = true
+o.ignorecase = true
+o.smartcase = true
+
+-- Scroll
+o.scrolloff = 5
+o.sidescroll = 10
 
 -- Set cursor to block when being on insert mode
 o.guicursor = 'i:block'
