@@ -11,14 +11,26 @@ end
 vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
 return require("packer").startup(function(use)
+    -- Packer
 	use "wbthomason/packer.nvim"
-	use {
-		'nvim-telescope/telescope.nvim',
-		requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-	}
-	use 'kyazdani42/nvim-web-devicons'
+    -- Packer
+
+	use { 'nvim-telescope/telescope.nvim',
+		requires = {
+                    {'nvim-lua/popup.nvim'},
+                    {'nvim-lua/plenary.nvim'}
+                   }
+        }
+
+    -- LSP
 	use 'neovim/nvim-lspconfig'
-	use 'hrsh7th/nvim-compe'
-	use 'hrsh7th/vim-vsnip'
+	use 'nvim-lua/completion-nvim'
+    use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
+    use 'kabouzeid/nvim-lspinstall'
+
+    --
+    use 'eddyekofo94/gruvbox-flat.nvim'
+	use 'kyazdani42/nvim-web-devicons'
+
 
 end)

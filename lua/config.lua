@@ -1,5 +1,12 @@
 -- vim.api.nvim_set_option()
 local o = vim.o
+
+
+
+-- Colorscheme
+vim.cmd[[colorscheme gruvbox-flat]]
+
+
 -- Basic
 o.autowrite = true
 o.errorbells = false
@@ -19,4 +26,5 @@ o.expandtab = true
 o.smarttab = true
 o.autoindent = true
 
-vim.cmd([[autocmd BufWritePre * :lua StripTrailingWhitespaces()]])
+-- Call remove whitespaces when file is saved
+vim.cmd[[autocmd BufWritePre * :lua StripTrailingWhitespaces()]]
