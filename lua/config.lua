@@ -2,7 +2,6 @@
 local o = vim.o
 
 
-
 -- Colorscheme
 vim.cmd[[colorscheme gruvbox-flat]]
 
@@ -11,6 +10,7 @@ vim.cmd[[colorscheme gruvbox-flat]]
 o.autowrite = true
 o.errorbells = false
 o.wrap = false
+o.swapfile = false
 
 -- Set cursor to block when being on insert mode
 o.guicursor = 'i:block'
