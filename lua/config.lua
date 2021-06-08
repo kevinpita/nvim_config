@@ -1,10 +1,9 @@
 -- vim.api.nvim_set_option()
-local o = vim.o
+local o = vim.opt
 
 
 -- Colorscheme
 vim.cmd[[colorscheme gruvbox-flat]]
-
 
 -- Basic
 o.autowrite = true
@@ -18,6 +17,7 @@ o.backup = false
 o.showcmd = true
 o.ignorecase = true
 o.smartcase = true
+o.list = true
 
 -- Scroll
 o.scrolloff = 5

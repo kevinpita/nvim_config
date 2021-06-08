@@ -6,3 +6,4 @@ require("config")
 -- Plugins config
 require("lsp")
 require("treesitter")
+require("completion")

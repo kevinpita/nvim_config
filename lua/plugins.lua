@@ -12,25 +12,29 @@ vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when th
 
 return require("packer").startup(function(use)
     -- Packer
-	use "wbthomason/packer.nvim"
+    use "wbthomason/packer.nvim"
     -- Packer
 
-	use { 'nvim-telescope/telescope.nvim',
-		requires = {
+    use { 'nvim-telescope/telescope.nvim',
+        requires = {
                     {'nvim-lua/popup.nvim'},
                     {'nvim-lua/plenary.nvim'}
                    }
         }
 
     -- LSP
-	use 'neovim/nvim-lspconfig'
-	use 'nvim-lua/completion-nvim'
+    use 'neovim/nvim-lspconfig'
     use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
     use 'kabouzeid/nvim-lspinstall'
+    use 'hrsh7th/nvim-compe'
+    use 'hrsh7th/vim-vsnip'
+
+    -- Basic
+    use 'airblade/vim-gitgutter'
+    use 'glepnir/indent-guides.nvim'
 
     --
     use 'eddyekofo94/gruvbox-flat.nvim'
-	use 'kyazdani42/nvim-web-devicons'
-
+    use 'kyazdani42/nvim-web-devicons'
 
 end)
