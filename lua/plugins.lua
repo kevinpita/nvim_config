@@ -33,6 +33,9 @@ return require("packer").startup(function(use)
     use 'airblade/vim-gitgutter'
     use 'glepnir/indent-guides.nvim'
     use 'andymass/vim-matchup'
+    use 'tpope/vim-commentary'
+    use 'tpope/vim-repeat'
+    use 'tpope/vim-surround'
 
     --
     use 'eddyekofo94/gruvbox-flat.nvim'
