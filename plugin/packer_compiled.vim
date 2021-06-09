@@ -111,9 +111,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
+  ["targets.vim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/targets.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
   ["vim-gitgutter"] = {
     loaded = true,
@@ -122,6 +130,14 @@ _G.packer_plugins = {
   ["vim-matchup"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-matchup"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-repeat"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-surround"
   },
   ["vim-vsnip"] = {
     loaded = true,
