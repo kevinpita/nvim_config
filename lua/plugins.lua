@@ -32,6 +32,7 @@ return require("packer").startup(function(use)
     -- Basic
     use 'airblade/vim-gitgutter'
     use 'glepnir/indent-guides.nvim'
+    use 'andymass/vim-matchup'
 
     --
     use 'eddyekofo94/gruvbox-flat.nvim'

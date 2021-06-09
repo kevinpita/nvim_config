@@ -118,6 +118,10 @@ _G.packer_plugins = {
   ["vim-gitgutter"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-gitgutter"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-vsnip"
   }
 }
 
