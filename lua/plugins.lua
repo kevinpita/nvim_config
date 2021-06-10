@@ -22,12 +22,18 @@ return require("packer").startup(function(use)
                    }
         }
 
+    -- ui
+    use 'eddyekofo94/gruvbox-flat.nvim'
+    use 'kyazdani42/nvim-web-devicons'
+    use 'folke/todo-comments.nvim'
+
     -- LSP
     use 'neovim/nvim-lspconfig'
     use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
     use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/nvim-compe'
     use 'hrsh7th/vim-vsnip'
+    use 'rafamadriz/friendly-snippets'
     use 'simrat39/symbols-outline.nvim'
 
     -- Basic
@@ -39,8 +45,6 @@ return require("packer").startup(function(use)
     use 'tpope/vim-surround'
     use 'wellle/targets.vim'
 
-    --
-    use 'eddyekofo94/gruvbox-flat.nvim'
-    use 'kyazdani42/nvim-web-devicons'
+    -- Markdown
 
 end)

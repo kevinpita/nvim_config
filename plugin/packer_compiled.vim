@@ -72,6 +72,10 @@ end
 time("try_loadstring definition", false)
 time("Defining packer_plugins", true)
 _G.packer_plugins = {
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/friendly-snippets"
+  },
   ["gruvbox-flat.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
@@ -111,6 +115,10 @@ _G.packer_plugins = {
   ["popup.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim"
   },
   ["targets.vim"] = {
     loaded = true,
