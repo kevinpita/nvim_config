@@ -5,8 +5,6 @@ vim.api.nvim_set_keymap('n', '<Leader>h', ':noh<CR>',
                         {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>e', ':Lexplore<CR>',
                         {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>f', ':Telescope find_files<CR>',
-                        {noremap = true, silent = true})
 
 -- Window movements
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {silent = true})
