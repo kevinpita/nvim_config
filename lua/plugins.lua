@@ -28,6 +28,7 @@ return require("packer").startup(function(use)
     use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/nvim-compe'
     use 'hrsh7th/vim-vsnip'
+    use 'simrat39/symbols-outline.nvim'
 
     -- Basic
     use 'airblade/vim-gitgutter'
