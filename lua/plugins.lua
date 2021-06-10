@@ -15,15 +15,14 @@ vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when th
 
 return require("packer").startup(function(use)
     -- Packer
-    use "wbthomason/packer.nvim"
-
+    use 'wbthomason/packer.nvim'
 
     -- ui
     use 'eddyekofo94/gruvbox-flat.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'onsails/lspkind-nvim'
-    use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
-    use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
     use 'folke/lsp-colors.nvim'
 
     -- LSP
@@ -39,6 +38,7 @@ return require("packer").startup(function(use)
     use 'sbdchd/neoformat'
 
     -- Symbols and Finder
+    use 'folke/trouble.nvim'
     use 'simrat39/symbols-outline.nvim'
     use {
         'nvim-telescope/telescope.nvim',
