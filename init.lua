@@ -1,3 +1,6 @@
+vim.cmd [[colorscheme gruvbox-flat]]
+
+
 require("plugins")
 require("keymaps")
 require("functions")
@@ -8,3 +11,4 @@ require("lsp")
 require("treesitter")
 require("completion")
 require("symbolsoutline")
+require("pictograms")

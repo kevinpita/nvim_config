@@ -1,9 +1,7 @@
 -- vim.api.nvim_set_option()
 local o = vim.opt
 
-
 -- Colorscheme
-vim.cmd[[colorscheme gruvbox-flat]]
 
 -- Basic
 o.autowrite = true
@@ -39,7 +37,7 @@ o.autoindent = true
 
 -- ColorColumn
 o.colorcolumn = "80"
-vim.cmd[[highlight ColorColumn ctermbg=0 guibg=LightRed]]
+vim.cmd [[highlight ColorColumn ctermbg=0 guibg=LightRed]]
 
 -- Call remove whitespaces when file is saved
-vim.cmd[[autocmd BufWritePre * :lua StripTrailingWhitespaces()]]
+vim.cmd [[autocmd BufWritePre * :lua StripTrailingWhitespaces()]]

@@ -80,9 +80,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
   },
-  ["indent-guides.nvim"] = {
+  ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/indent-guides.nvim"
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
+  },
+  neoformat = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/neoformat"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -151,6 +159,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/which-key.nvim"
   }
 }
 
