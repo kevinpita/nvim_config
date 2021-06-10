@@ -1,6 +1,5 @@
 vim.cmd [[colorscheme gruvbox-flat]]
 
-
 require("plugins")
 require("keymaps")
 require("functions")

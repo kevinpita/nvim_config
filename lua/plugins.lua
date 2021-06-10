@@ -16,37 +16,43 @@ vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when th
 return require("packer").startup(function(use)
     -- Packer
     use "wbthomason/packer.nvim"
-    -- Packer
 
+
+    -- ui
+    use 'eddyekofo94/gruvbox-flat.nvim'
+    use 'kyazdani42/nvim-web-devicons'
+    use 'onsails/lspkind-nvim'
+    use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
+    use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
+    use 'folke/lsp-colors.nvim'
+
+    -- LSP
+    use 'neovim/nvim-lspconfig'
+    use 'kabouzeid/nvim-lspinstall'
+
+    -- Completion
+    use 'hrsh7th/nvim-compe'
+    use 'hrsh7th/vim-vsnip'
+    use 'rafamadriz/friendly-snippets'
+
+    -- Format
+    use 'sbdchd/neoformat'
+
+    -- Symbols and Finder
+    use 'simrat39/symbols-outline.nvim'
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
 
-    -- ui
-    use 'eddyekofo94/gruvbox-flat.nvim'
-    use 'kyazdani42/nvim-web-devicons'
-
-    -- LSP
-    use 'neovim/nvim-lspconfig'
-    use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
-    use 'kabouzeid/nvim-lspinstall'
-    use 'hrsh7th/nvim-compe'
-    use 'hrsh7th/vim-vsnip'
-    use 'rafamadriz/friendly-snippets'
-    use 'simrat39/symbols-outline.nvim'
-    use 'onsails/lspkind-nvim'
-    use 'sbdchd/neoformat'
-
     -- Basic
+    use 'folke/which-key.nvim'
     use 'airblade/vim-gitgutter'
     use 'andymass/vim-matchup'
     use 'tpope/vim-commentary'
     use 'tpope/vim-repeat'
     use 'tpope/vim-surround'
     use 'wellle/targets.vim'
-    use 'folke/which-key.nvim'
-    use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
     -- Markdown
 
