@@ -24,16 +24,17 @@ return require("packer").startup(function(use)
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
     use 'folke/lsp-colors.nvim'
+    use 'ray-x/lsp_signature.nvim'
 
     -- LSP
     use 'neovim/nvim-lspconfig'
     use 'kabouzeid/nvim-lspinstall'
+    use 'kosayoda/nvim-lightbulb'
 
     -- Completion
     use 'hrsh7th/nvim-compe'
     use 'hrsh7th/vim-vsnip'
     use 'rafamadriz/friendly-snippets'
-    use 'ray-x/lsp_signature.nvim'
 
     -- Format
     use 'sbdchd/neoformat'
