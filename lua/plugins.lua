@@ -19,12 +19,24 @@ return require("packer").startup(function(use)
 
     -- ui
     use 'eddyekofo94/gruvbox-flat.nvim'
+    use 'sainnhe/gruvbox-material'
     use 'kyazdani42/nvim-web-devicons'
     use 'onsails/lspkind-nvim'
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
     use 'folke/lsp-colors.nvim'
     use 'ray-x/lsp_signature.nvim'
+
+    -- Lines
+    use 'akinsho/nvim-bufferline.lua'
+    use {
+        'glepnir/galaxyline.nvim',
+        branch = 'main',
+        -- your statusline
+        config = function() require 'my_statusline' end,
+        -- some optional icons
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
 
     -- LSP
     use 'neovim/nvim-lspconfig'

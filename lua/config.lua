@@ -41,3 +41,4 @@ vim.cmd [[highlight ColorColumn ctermbg=0 guibg=LightRed]]
 
 -- Call remove whitespaces when file is saved
 vim.cmd [[autocmd BufWritePre * :lua StripTrailingWhitespaces()]]
+vim.cmd([[autocmd BufWritePre * :lua CreateDirOnSave()]])

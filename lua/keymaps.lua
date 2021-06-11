@@ -1,3 +1,7 @@
+if false then
+   vim = {"LSP undefined hack"}
+end
+
 -- Leader key
 vim.g.mapleader = ' '
 
@@ -13,6 +17,11 @@ vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {silent = true})
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {silent = true})
 vim.api
     .nvim_set_keymap('n', '<space>', '<nop>', {noremap = true, silent = true})
+
+-- Buffers movements
+vim.api.nvim_set_keymap('n', 'gn', ':bn<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'gp', ':bp<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'gd', ':bd<CR>', {noremap = true, silent = true})
 
 -- Keep visual selection after indent
 vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})

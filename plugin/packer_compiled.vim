@@ -80,6 +80,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-material"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
@@ -103,6 +107,10 @@ _G.packer_plugins = {
   ["nvim-compe"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-lightbulb"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
