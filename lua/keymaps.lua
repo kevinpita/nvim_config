@@ -1,12 +1,10 @@
-if false then
+if 3 == 4 then
    vim = {"LSP undefined hack"}
 end
 
 -- Leader key
 vim.g.mapleader = ' '
 
-vim.api.nvim_set_keymap('n', '<Leader>h', ':noh<CR>',
-                        {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>e', ':Lexplore<CR>',
                         {noremap = true, silent = true})
 

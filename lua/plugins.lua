@@ -19,24 +19,20 @@ return require("packer").startup(function(use)
 
     -- ui
     use 'eddyekofo94/gruvbox-flat.nvim'
-    use 'sainnhe/gruvbox-material'
     use 'kyazdani42/nvim-web-devicons'
     use 'onsails/lspkind-nvim'
-    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
     use 'folke/lsp-colors.nvim'
     use 'ray-x/lsp_signature.nvim'
+    use 'p00f/nvim-ts-rainbow'
+
+    -- TreeSitter
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use 'windwp/nvim-ts-autotag'
 
     -- Lines
     use 'akinsho/nvim-bufferline.lua'
-    use {
-        'glepnir/galaxyline.nvim',
-        branch = 'main',
-        -- your statusline
-        config = function() require 'my_statusline' end,
-        -- some optional icons
-        requires = {'kyazdani42/nvim-web-devicons', opt = true}
-    }
+    use 'glepnir/galaxyline.nvim'
 
     -- LSP
     use 'neovim/nvim-lspconfig'
@@ -58,15 +54,23 @@ return require("packer").startup(function(use)
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
+    -- CHECK: https://github.com/phaazon/hop.nvim
 
     -- Basic
     use 'folke/which-key.nvim'
     use 'airblade/vim-gitgutter'
     use 'andymass/vim-matchup'
-    use 'tpope/vim-commentary'
-    use 'tpope/vim-repeat'
-    use 'tpope/vim-surround'
+    use 'b3nj5m1n/kommentary'
+    use 'blackCauldron7/surround.nvim'
     use 'wellle/targets.vim'
+    use 'tpope/vim-repeat'
+
+    -- Misc
+    use 'ahmedkhalf/lsp-rooter.nvim'
+    use {
+        'AckslD/nvim-revJ.lua',
+        requires = {'kana/vim-textobj-user', 'sgur/vim-textobj-parameter'}
+    }
 
     -- Markdown
 

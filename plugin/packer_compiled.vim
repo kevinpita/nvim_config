@@ -76,21 +76,29 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/friendly-snippets"
   },
+  ["galaxyline.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+  },
   ["gruvbox-flat.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
-  },
-  ["gruvbox-material"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-material"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
   },
+  kommentary = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/kommentary"
+  },
   ["lsp-colors.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim"
+  },
+  ["lsp-rooter.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/lsp-rooter.nvim"
   },
   ["lsp_signature.nvim"] = {
     loaded = true,
@@ -103,6 +111,10 @@ _G.packer_plugins = {
   neoformat = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/neoformat"
+  },
+  ["nvim-bufferline.lua"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -124,6 +136,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
+  },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
@@ -139,6 +159,10 @@ _G.packer_plugins = {
   ["popup.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["surround.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/surround.nvim"
   },
   ["symbols-outline.nvim"] = {
     loaded = true,
@@ -156,10 +180,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/trouble.nvim"
   },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-commentary"
-  },
   ["vim-gitgutter"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-gitgutter"
@@ -171,10 +191,6 @@ _G.packer_plugins = {
   ["vim-repeat"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-repeat"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-surround"
   },
   ["vim-vsnip"] = {
     loaded = true,
