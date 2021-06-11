@@ -5,11 +5,13 @@ require("keymaps")
 require("functions")
 require("config")
 
+
 -- Plugins config
-require("lsp")
 require("treesitter")
+require("lsp")
 require("completion")
-require("symbolsoutline")
-require("pictograms")
 require("telescope_config")
 require("trouble_config")
+require("symbolsoutline")
+require("pictograms")
+require("general_plugins")

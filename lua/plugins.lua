@@ -33,6 +33,7 @@ return require("packer").startup(function(use)
     use 'hrsh7th/nvim-compe'
     use 'hrsh7th/vim-vsnip'
     use 'rafamadriz/friendly-snippets'
+    use 'ray-x/lsp_signature.nvim'
 
     -- Format
     use 'sbdchd/neoformat'
