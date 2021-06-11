@@ -54,8 +54,14 @@ return require("packer").startup(function(use)
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
-    -- CHECK: https://github.com/phaazon/hop.nvim
-
+    use {
+        'phaazon/hop.nvim',
+        as = 'hop',
+        config = function()
+            -- you can configure Hop the way you like here; see :h hop-config
+            require'hop'.setup {keys = 'etovxqpdygfblzhckisuran'}
+        end
+    }
     -- Basic
     use 'folke/which-key.nvim'
     use 'airblade/vim-gitgutter'
@@ -71,6 +77,7 @@ return require("packer").startup(function(use)
         'AckslD/nvim-revJ.lua',
         requires = {'kana/vim-textobj-user', 'sgur/vim-textobj-parameter'}
     }
+    use 'andweeb/presence.nvim'
 
     -- Markdown
 

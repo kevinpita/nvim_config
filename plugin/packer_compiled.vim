@@ -132,6 +132,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
+  ["nvim-revJ.lua"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-revJ.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
@@ -159,6 +163,10 @@ _G.packer_plugins = {
   ["popup.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/presence.nvim"
   },
   ["surround.nvim"] = {
     loaded = true,
@@ -191,6 +199,14 @@ _G.packer_plugins = {
   ["vim-repeat"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-repeat"
+  },
+  ["vim-textobj-parameter"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-textobj-parameter"
+  },
+  ["vim-textobj-user"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-textobj-user"
   },
   ["vim-vsnip"] = {
     loaded = true,
