@@ -84,6 +84,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/git-blame.nvim"
+  },
   ["gruvbox-flat.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
@@ -177,10 +181,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
-  ["presence.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/presence.nvim"
-  },
   ["surround.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/surround.nvim"
@@ -196,6 +196,11 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["todo-comments.nvim"] = {
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0" },
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/todo-comments.nvim"
   },
   ["trouble.nvim"] = {
     loaded = true,
@@ -236,6 +241,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for hop]], true)
 try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop")
 time([[Config for hop]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
 if should_profile then save_profiles() end
 
 END

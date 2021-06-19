@@ -54,8 +54,18 @@ return require("packer").startup(function(use)
     }
     use 'sudormrfbin/cheatsheet.nvim'
 
-
     -- Symbols and Finder
+    use {
+        "folke/todo-comments.nvim",
+        requires = "nvim-lua/plenary.nvim",
+        config = function()
+            require("todo-comments").setup {
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            }
+        end
+    }
     use 'folke/trouble.nvim'
     use 'simrat39/symbols-outline.nvim'
     use {
@@ -66,7 +76,6 @@ return require("packer").startup(function(use)
             require'hop'.setup {keys = 'etovxqpdygfblzhckisuran'}
         end
     }
-
 
     -- Basic
     use 'folke/which-key.nvim'
@@ -85,7 +94,7 @@ return require("packer").startup(function(use)
     }
 
     -- Markdown
-    use {'iamcco/markdown-preview.nvim', run='cd app && yarn install'}
+    use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
 
     -- Git
     use 'f-person/git-blame.nvim'
