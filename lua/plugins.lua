@@ -25,6 +25,10 @@ return require("packer").startup(function(use)
     use 'folke/lsp-colors.nvim'
     use 'ray-x/lsp_signature.nvim'
     use 'p00f/nvim-ts-rainbow'
+    use {
+        'norcalli/nvim-colorizer.lua',
+        config = function() require'colorizer'.setup() end
+    }
 
     -- TreeSitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -54,7 +58,6 @@ return require("packer").startup(function(use)
     }
     use 'sudormrfbin/cheatsheet.nvim'
 
-
     -- Symbols and Finder
     use 'folke/trouble.nvim'
     use 'simrat39/symbols-outline.nvim'
@@ -66,7 +69,6 @@ return require("packer").startup(function(use)
             require'hop'.setup {keys = 'etovxqpdygfblzhckisuran'}
         end
     }
-
 
     -- Basic
     use 'folke/which-key.nvim'
@@ -85,7 +87,7 @@ return require("packer").startup(function(use)
     }
 
     -- Markdown
-    use {'iamcco/markdown-preview.nvim', run='cd app && yarn install'}
+    use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
 
     -- Git
     use 'f-person/git-blame.nvim'
