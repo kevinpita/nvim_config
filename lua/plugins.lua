@@ -47,13 +47,15 @@ return require("packer").startup(function(use)
     -- Format
     use 'sbdchd/neoformat'
 
-    -- Symbols and Finder
-    use 'folke/trouble.nvim'
-    use 'simrat39/symbols-outline.nvim'
+    -- Telescope
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
+
+    -- Symbols and Finder
+    use 'folke/trouble.nvim'
+    use 'simrat39/symbols-outline.nvim'
     use {
         'phaazon/hop.nvim',
         as = 'hop',
@@ -62,6 +64,8 @@ return require("packer").startup(function(use)
             require'hop'.setup {keys = 'etovxqpdygfblzhckisuran'}
         end
     }
+
+
     -- Basic
     use 'folke/which-key.nvim'
     use 'airblade/vim-gitgutter'
@@ -80,5 +84,5 @@ return require("packer").startup(function(use)
     use 'andweeb/presence.nvim'
 
     -- Markdown
-
+    use {'iamcco/markdown-preview.nvim', run='cd app && yarn install'}
 end)
