@@ -72,103 +72,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["cheatsheet.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/friendly-snippets"
-  },
-  ["galaxyline.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
-  },
-  ["git-blame.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/git-blame.nvim"
-  },
-  ["gruvbox-flat.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
-  },
-  hop = {
-    config = { "\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0" },
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/hop"
-  },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
-  },
-  kommentary = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/kommentary"
-  },
-  ["lsp-colors.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim"
-  },
-  ["lsp-rooter.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/lsp-rooter.nvim"
-  },
-  ["lsp_signature.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim"
-  },
-  ["lspkind-nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
-  },
-  ["markdown-preview.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
-  },
-  neoformat = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/neoformat"
-  },
-  ["nvim-bufferline.lua"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
-  },
-  ["nvim-compe"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-compe"
-  },
-  ["nvim-lightbulb"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-lightbulb"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
-  },
-  ["nvim-lspinstall"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
-  },
-  ["nvim-revJ.lua"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-revJ.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
-  },
-  ["nvim-ts-autotag"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
-  },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/packer.nvim"
@@ -177,70 +80,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
-  ["popup.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/popup.nvim"
-  },
-  ["surround.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/surround.nvim"
-  },
-  ["symbols-outline.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim"
-  },
-  ["targets.vim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/targets.vim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/telescope.nvim"
-  },
   ["todo-comments.nvim"] = {
     config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0" },
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/todo-comments.nvim"
-  },
-  ["trouble.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/trouble.nvim"
-  },
-  ["vim-gitgutter"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-gitgutter"
-  },
-  ["vim-matchup"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-matchup"
-  },
-  ["vim-repeat"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-repeat"
-  },
-  ["vim-textobj-parameter"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-textobj-parameter"
-  },
-  ["vim-textobj-user"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-textobj-user"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-vsnip"
-  },
-  ["which-key.nvim"] = {
-    loaded = true,
-    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/which-key.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: hop
-time([[Config for hop]], true)
-try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop")
-time([[Config for hop]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
