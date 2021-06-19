@@ -37,19 +37,6 @@ require'telescope'.setup {
         -- Developer configurations: Not meant for general override
         buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
     },
-    extensions = {
-    }
+    extensions = {}
 }
 
-vim.api.nvim_set_keymap('n', '<Leader>f', ':Telescope find_files<CR>',
-                        {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>g', ':Telescope live_grep<CR>',
-                        {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>b', ':Telescope buffers<CR>',
-                        {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>d', ':Telescope lsp_definitions<CR>',
-                        {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>rr', ':Telescope lsp_references<CR>',
-                        {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>a', ':Telescope lsp_code_actions<CR>',
-                        {noremap = true, silent = true})

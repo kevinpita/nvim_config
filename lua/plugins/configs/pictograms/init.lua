@@ -1,6 +1,5 @@
 require'lspkind'.init({
     -- enables text annotations
-    --
     -- default: true
     with_text = true,
 

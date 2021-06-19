@@ -1,6 +1,4 @@
-if 3 == 4 then
-   vim = {'LSP undefined hack'}
-end
+if 3 == 4 then vim = {'LSP undefined hack'} end
 
 -- Leader key
 vim.api

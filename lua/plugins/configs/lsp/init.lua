@@ -1,10 +1,3 @@
-local function buf_set_keymap(...) vim.api.nvim_set_keymap(...) end
-
--- Mappings.
-local opts = {noremap = true, silent = true}
-
-buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-
 require'lspinstall'.setup() -- important
 
 local function setup_servers()
