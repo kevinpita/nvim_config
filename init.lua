@@ -18,3 +18,7 @@ require("pictograms")
 require("lightbulb")
 require("revjoin")
 require("general_plugins")
+
+
+require("plugins.keymaps")
+require("plugins.autocommands")

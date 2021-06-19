@@ -33,7 +33,6 @@ table.insert(gls.left, {
                 n = colors.blue,
                 i = colors.green,
                 v = colors.purple,
-                [''] = colors.purple,
                 V = colors.purple,
                 c = colors.magenta,
                 no = colors.blue,

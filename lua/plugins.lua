@@ -13,7 +13,7 @@ end
 
 vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
-return require("packer").startup(function(use)
+return require'packer'.startup(function(use)
     -- Packer
     use 'wbthomason/packer.nvim'
 
@@ -23,7 +23,15 @@ return require("packer").startup(function(use)
     use 'onsails/lspkind-nvim'
     use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
     use 'folke/lsp-colors.nvim'
-    use 'ray-x/lsp_signature.nvim'
+    use {
+        'ray-x/lsp_signature.nvim',
+        config = function()
+            require'lsp_signature'.on_attach({
+                bind = true, -- This is mandatory, otherwise border config won't get registered.
+                handler_opts = {border = "single"}
+            })
+        end
+    }
     use 'p00f/nvim-ts-rainbow'
     use {
         'norcalli/nvim-colorizer.lua',
@@ -32,10 +40,16 @@ return require("packer").startup(function(use)
 
     -- TreeSitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-    use 'windwp/nvim-ts-autotag'
+    use {
+        'windwp/nvim-ts-autotag',
+        config = function() require'nvim-ts-autotag'.setup() end
+    }
 
     -- Lines
-    use 'akinsho/nvim-bufferline.lua'
+    use {
+        'akinsho/nvim-bufferline.lua',
+        config = function() require'bufferline'.setup {} end
+    }
     use 'glepnir/galaxyline.nvim'
 
     -- LSP
@@ -65,7 +79,6 @@ return require("packer").startup(function(use)
         'phaazon/hop.nvim',
         as = 'hop',
         config = function()
-            -- you can configure Hop the way you like here; see :h hop-config
             require'hop'.setup {keys = 'etovxqpdygfblzhckisuran'}
         end
     }
@@ -75,12 +88,19 @@ return require("packer").startup(function(use)
     use 'airblade/vim-gitgutter'
     use 'andymass/vim-matchup'
     use 'b3nj5m1n/kommentary'
-    use 'blackCauldron7/surround.nvim'
+    use {
+        'blackCauldron7/surround.nvim',
+        config = function() require'surround'.setup {} end
+
+    }
     use 'wellle/targets.vim'
     use 'tpope/vim-repeat'
 
     -- Misc
-    use 'ahmedkhalf/lsp-rooter.nvim'
+    use {
+        'ahmedkhalf/lsp-rooter.nvim',
+        config = function() require'lsp-rooter'.setup {} end
+    }
     use {
         'AckslD/nvim-revJ.lua',
         requires = {'kana/vim-textobj-user', 'sgur/vim-textobj-parameter'}
