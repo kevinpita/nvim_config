@@ -1,4 +1,4 @@
-require('lspkind').init({
+require'lspkind'.init({
     -- enables text annotations
     --
     -- default: true

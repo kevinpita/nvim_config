@@ -1,6 +1,6 @@
-local gl = require('galaxyline')
+local gl = require'galaxyline'
 -- get my theme in galaxyline repo
--- local colors = require('galaxyline.theme').default
+-- local colors = require'galaxyline.theme'.default
 local colors = {
     -- bg = '#2E2E2E',
     bg = '#292D38',
@@ -21,7 +21,7 @@ local colors = {
     error_red = '#F44747',
     info_yellow = '#FFCC66'
 }
-local condition = require('galaxyline.condition')
+local condition = require'galaxyline.condition'
 local gls = gl.section
 gl.short_line_list = {'NvimTree', 'vista', 'dbui', 'packer'}
 
