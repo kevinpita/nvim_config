@@ -52,6 +52,8 @@ return require("packer").startup(function(use)
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
+    use 'sudormrfbin/cheatsheet.nvim'
+
 
     -- Symbols and Finder
     use 'folke/trouble.nvim'
@@ -81,8 +83,10 @@ return require("packer").startup(function(use)
         'AckslD/nvim-revJ.lua',
         requires = {'kana/vim-textobj-user', 'sgur/vim-textobj-parameter'}
     }
-    use 'andweeb/presence.nvim'
 
     -- Markdown
     use {'iamcco/markdown-preview.nvim', run='cd app && yarn install'}
+
+    -- Git
+    use 'f-person/git-blame.nvim'
 end)

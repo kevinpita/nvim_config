@@ -7,3 +7,4 @@ require('nvim-ts-autotag').setup()
 require("lsp-rooter").setup {}
 require"surround".setup {}
 vim.api.nvim_set_keymap('n', '<leader>hh', "<cmd>lua require'hop'.hint_words()<cr>", {})
+vim.cmd([[autocmd CursorHold * :lua vim.lsp.diagnostic.show_line_diagnostics()]])

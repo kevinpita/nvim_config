@@ -72,6 +72,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cheatsheet.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/friendly-snippets"

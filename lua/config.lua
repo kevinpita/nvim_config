@@ -35,6 +35,9 @@ o.expandtab = true
 o.smarttab = true
 o.autoindent = true
 
+-- CursorHold
+o.updatetime = 2000
+
 -- ColorColumn
 o.colorcolumn = "80"
 vim.cmd [[highlight ColorColumn ctermbg=0 guibg=LightRed]]
