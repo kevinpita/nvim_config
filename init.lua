@@ -1,4 +1,5 @@
 require 'functions'
+require 'autocommands'
 require 'config'
 require 'plugins.list'
 
