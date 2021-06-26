@@ -11,6 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     execute 'packadd packer.nvim'
 end
 
+
 vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
 return require'packer'.startup(function(use)
@@ -96,7 +97,7 @@ return require'packer'.startup(function(use)
 
     -- Basic
     use 'folke/which-key.nvim'
-    use 'airblade/vim-gitgutter'
+    use 'lewis6991/gitsigns.nvim'
     use 'andymass/vim-matchup'
     use 'b3nj5m1n/kommentary'
     use {
@@ -120,6 +121,4 @@ return require'packer'.startup(function(use)
     -- Markdown
     use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
 
-    -- Git
-    use 'f-person/git-blame.nvim'
 end)
