@@ -20,7 +20,10 @@ return require'packer'.startup(function(use)
     -- ui
     use 'eddyekofo94/gruvbox-flat.nvim'
     use 'kyazdani42/nvim-web-devicons'
-    use 'onsails/lspkind-nvim'
+    use {
+        'onsails/lspkind-nvim',
+        config = function() require 'plugins.configs.pictograms' end
+    }
     use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
     use 'folke/lsp-colors.nvim'
     use {
@@ -39,7 +42,12 @@ return require'packer'.startup(function(use)
     }
 
     -- TreeSitter
-    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate',
+        config = function() require 'plugins.configs.treesitter' end
+
+    }
     use {
         'windwp/nvim-ts-autotag',
         config = function() require'nvim-ts-autotag'.setup() end
@@ -50,15 +58,25 @@ return require'packer'.startup(function(use)
         'akinsho/nvim-bufferline.lua',
         config = function() require'bufferline'.setup {} end
     }
-    use 'glepnir/galaxyline.nvim'
+    use {
+        'glepnir/galaxyline.nvim',
+        config = function() require 'plugins.configs.galaxyline' end
+
+    }
 
     -- LSP
-    use 'neovim/nvim-lspconfig'
+    use {'neovim/nvim-lspconfig', config = function() require 'plugins.configs.lsp' end}
     use 'kabouzeid/nvim-lspinstall'
-    use 'kosayoda/nvim-lightbulb'
+    use {
+        'kosayoda/nvim-lightbulb',
+        config = function() require 'plugins.configs.lightbulb' end
+    }
 
     -- Completion
-    use 'hrsh7th/nvim-compe'
+    use {
+        'hrsh7th/nvim-compe',
+        config = function() require 'plugins.configs.completion' end
+    }
     use 'hrsh7th/vim-vsnip'
     use 'rafamadriz/friendly-snippets'
 
@@ -68,12 +86,20 @@ return require'packer'.startup(function(use)
     -- Telescope
     use {
         'nvim-telescope/telescope.nvim',
-        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
+        config = function() require 'plugins.configs.telescope' end
     }
 
     -- Symbols and Finder
-    use 'folke/trouble.nvim'
-    use 'simrat39/symbols-outline.nvim'
+    use {
+        'folke/trouble.nvim',
+        config = function() require 'plugins.configs.trouble' end
+    }
+    use {
+        'simrat39/symbols-outline.nvim',
+        config = function() require 'plugins.configs.symbolsoutline' end
+
+    }
     use {
         'phaazon/hop.nvim',
         as = 'hop',
@@ -84,15 +110,19 @@ return require'packer'.startup(function(use)
     use {
         'folke/todo-comments.nvim',
         requires = "nvim-lua/plenary.nvim",
-        config = function()
-            require'todo-comments'.setup {
-            }
-        end
+        config = function() require'todo-comments'.setup {} end
     }
+    use {'kyazdani42/nvim-tree.lua',
+        config = function() require'plugins.configs.luatree' end
+}
 
     -- Basic
     use 'folke/which-key.nvim'
-    use 'lewis6991/gitsigns.nvim'
+    use {
+        'lewis6991/gitsigns.nvim',
+        config = function() require 'plugins.configs.gitsigns' end
+
+    }
     use 'andymass/vim-matchup'
     use 'b3nj5m1n/kommentary'
     use {
