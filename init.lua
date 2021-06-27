@@ -17,7 +17,6 @@ require 'plugins.configs.galaxyline'
 require 'plugins.configs.symbolsoutline'
 require 'plugins.configs.pictograms'
 require 'plugins.configs.lightbulb'
-require 'plugins.configs.revjoin'
 require 'plugins.configs.gitsigns'
 
 require 'plugins.keymaps'

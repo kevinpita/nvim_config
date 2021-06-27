@@ -11,7 +11,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
     execute 'packadd packer.nvim'
 end
 
-
 vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
 return require'packer'.startup(function(use)
@@ -71,7 +70,6 @@ return require'packer'.startup(function(use)
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
-    use 'sudormrfbin/cheatsheet.nvim'
 
     -- Symbols and Finder
     use 'folke/trouble.nvim'
@@ -88,9 +86,6 @@ return require'packer'.startup(function(use)
         requires = "nvim-lua/plenary.nvim",
         config = function()
             require'todo-comments'.setup {
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                -- refer to the configuration section below
             }
         end
     }
@@ -113,10 +108,7 @@ return require'packer'.startup(function(use)
         'ahmedkhalf/lsp-rooter.nvim',
         config = function() require'lsp-rooter'.setup {} end
     }
-    use {
-        'AckslD/nvim-revJ.lua',
-        requires = {'kana/vim-textobj-user', 'sgur/vim-textobj-parameter'}
-    }
+    use 'sudormrfbin/cheatsheet.nvim'
 
     -- Markdown
     use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
