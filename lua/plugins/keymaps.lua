@@ -31,3 +31,7 @@ vim.api.nvim_set_keymap('n', '<Leader>a', ':Telescope lsp_code_actions<CR>',
 -- Trouble
 vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>Trouble<cr>",
                         {silent = true, noremap = true})
+
+-- nvim-tree.nvim
+vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>',
+                        {noremap = true, silent = true})

@@ -5,8 +5,6 @@ vim.api
     .nvim_set_keymap('n', '<space>', '<nop>', {noremap = true, silent = true})
 vim.g.mapleader = ' '
 
-vim.api.nvim_set_keymap('n', '<Leader>e', ':Lexplore<CR>',
-                        {noremap = true, silent = true})
 
 -- Window movements
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {silent = true})
