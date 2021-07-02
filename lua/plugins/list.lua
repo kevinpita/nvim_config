@@ -65,11 +65,19 @@ return require'packer'.startup(function(use)
     }
 
     -- LSP
-    use {'neovim/nvim-lspconfig', config = function() require 'plugins.configs.lsp' end}
+    use {
+        'neovim/nvim-lspconfig',
+        config = function() require 'plugins.configs.lsp' end
+    }
     use 'kabouzeid/nvim-lspinstall'
     use {
         'kosayoda/nvim-lightbulb',
         config = function() require 'plugins.configs.lightbulb' end
+    }
+    use {
+        'glepnir/lspsaga.nvim',
+        config = function() require'lspsaga'.init_lsp_saga() end
+
     }
 
     -- Completion
@@ -112,9 +120,10 @@ return require'packer'.startup(function(use)
         requires = "nvim-lua/plenary.nvim",
         config = function() require'todo-comments'.setup {} end
     }
-    use {'kyazdani42/nvim-tree.lua',
-        config = function() require'plugins.configs.luatree' end
-}
+    use {
+        'kyazdani42/nvim-tree.lua',
+        config = function() require 'plugins.configs.luatree' end
+    }
 
     -- Basic
     use 'folke/which-key.nvim'

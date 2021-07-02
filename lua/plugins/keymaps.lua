@@ -29,9 +29,21 @@ vim.api.nvim_set_keymap('n', '<Leader>a', ':Telescope lsp_code_actions<CR>',
                         {noremap = true, silent = true})
 
 -- Trouble
-vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>Trouble<cr>",
+vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>Trouble<CR>",
                         {silent = true, noremap = true})
 
 -- nvim-tree.nvim
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>',
+                        {noremap = true, silent = true})
+
+-- lspsaga
+vim.api.nvim_set_keymap('n', 'K',
+                        [[<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>]],
+                        {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap('n', '<C-f>',
+                        [[<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>]],
+                        {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<C-b>',
+                        [[<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>]],
                         {noremap = true, silent = true})
