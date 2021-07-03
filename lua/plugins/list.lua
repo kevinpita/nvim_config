@@ -24,7 +24,7 @@ return require'packer'.startup(function(use)
         'onsails/lspkind-nvim',
         config = function() require 'plugins.configs.pictograms' end
     }
-    use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+    use {'lukas-reineke/indent-blankline.nvim'}
     use 'folke/lsp-colors.nvim'
     use {
         'ray-x/lsp_signature.nvim',
