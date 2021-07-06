@@ -148,6 +148,7 @@ return require'packer'.startup(function(use)
         config = function() require'lsp-rooter'.setup {} end
     }
     use 'sudormrfbin/cheatsheet.nvim'
+    use 'beauwilliams/focus.nvim'
 
     -- Markdown
     use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
