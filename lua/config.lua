@@ -39,7 +39,7 @@ o.autoindent = true
 o.updatetime = 2000
 
 -- ColorColumn
-o.colorcolumn = "80"
+o.colorcolumn = "88"
 vim.cmd [[highlight ColorColumn ctermbg=0 guibg=LightRed]]
 
 -- Call remove whitespaces when file is saved
