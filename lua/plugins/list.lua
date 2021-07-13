@@ -79,6 +79,7 @@ return require'packer'.startup(function(use)
         config = function() require'lspsaga'.init_lsp_saga() end
 
     }
+    use {'mfussenegger/nvim-jdtls'}
 
     -- Completion
     use {
