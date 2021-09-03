@@ -1,2 +1,2 @@
-vim.cmd [[autocmd BufWritePre * :lua StripTrailingWhitespaces()]]
+vim.cmd [[autocmd BufWritePre * :lua if vim.bo.filetype ~= "markdown" then StripTrailingWhitespaces() end]]
 vim.cmd [[autocmd BufWritePre * :lua CreateDirOnSave()]]
