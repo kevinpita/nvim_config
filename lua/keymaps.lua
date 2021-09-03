@@ -26,3 +26,11 @@ vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv',
                         {noremap = true, silent = true})
 vim.api.nvim_set_keymap('x', 'K', ':move \'<-2<CR>gv-gv',
                         {noremap = true, silent = true})
+
+-- Copy and Paste
+--
+vim.api.nvim_set_keymap('x', '<D-v>', ':r !pbpaste<CR><CR>',
+                        {noremap = true, silent = true})
+vim.api.nvim_set_keymap('x', '<C-c>', ':w !pbcopy<CR><CR>',
+                        {noremap = true, silent = true})
+
