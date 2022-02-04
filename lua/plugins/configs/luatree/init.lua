@@ -4,16 +4,10 @@ vim.o.termguicolors = true
 
 g.nvim_tree_side = "left"
 g.nvim_tree_width = 25
-g.nvim_tree_ignore = {".git", "node_modules", ".cache"}
-g.nvim_tree_auto_open = 0
-g.nvim_tree_auto_close = 0
 g.nvim_tree_quit_on_open = 0
-g.nvim_tree_follow = 1
 g.nvim_tree_indent_markers = 1
-g.nvim_tree_hide_dotfiles = 1
 g.nvim_tree_git_hl = 1
 g.nvim_tree_root_folder_modifier = ":t"
-g.nvim_tree_tab_open = 0
 g.nvim_tree_allow_resize = 1
 
 g.nvim_tree_show_icons = {git = 1, folders = 1, files = 1}
@@ -42,7 +36,57 @@ g.nvim_tree_icons = {
 
 local tree_cb = require"nvim-tree.config".nvim_tree_callback
 
-vim.g.nvim_tree_bindings = {
+require'nvim-tree'.setup {
+  disable_netrw       = true,
+  hijack_netrw        = true,
+  open_on_setup       = false,
+  ignore_ft_on_setup  = {},
+  auto_close          = false,
+  open_on_tab         = false,
+  hijack_cursor       = false,
+  update_cwd          = false,
+  update_to_buf_dir   = {
+    enable = true,
+    auto_open = true,
+  },
+  diagnostics = {
+    enable = false,
+    icons = {
+      hint = "",
+      info = "",
+      warning = "",
+      error = "",
+    }
+  },
+  update_focused_file = {
+    enable      = true,
+    update_cwd  = true,
+    ignore_list = {}
+  },
+  system_open = {
+    cmd  = nil,
+    args = {}
+  },
+  filters = {
+    dotfiles = true,
+    custom = {".git", "node_modules", ".cache"}
+  },
+  git = {
+    enable = true,
+    ignore = true,
+    timeout = 500,
+  },
+  view = {
+    width = 30,
+    height = 30,
+    hide_root_folder = false,
+    side = 'left',
+    auto_resize = false,
+    mappings = {
+      custom_only = false,
+      list = {
+
+
       { key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
       { key = {"<2-RightMouse>", "<C-]>"},    cb = tree_cb("cd") },
       { key = "<C-v>",                        cb = tree_cb("vsplit") },
@@ -74,4 +118,16 @@ vim.g.nvim_tree_bindings = {
       { key = "-",                            cb = tree_cb("dir_up") },
       { key = "q",                            cb = tree_cb("close") },
       { key = "g?",                           cb = tree_cb("toggle_help") },
-    }
+      }
+    },
+    number = false,
+    relativenumber = false,
+    signcolumn = "yes"
+  },
+  trash = {
+    cmd = "trash",
+    require_confirm = true
+  }
+}
+
+
